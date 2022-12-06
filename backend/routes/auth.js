@@ -56,7 +56,7 @@ router.post(
       res.json({ authtoken });
     } catch (error) {
       console.error(error.message);
-      res.status(500).send("Some error ocurred.");
+      res.status(500).send("User Already Exists");
     }
   }
 );
